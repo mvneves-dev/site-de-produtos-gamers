@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEVES TECH - Loja de Peças para Computadores Gamers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER COM BARRA DE BUSCA E CARRINHO -->
+    <header class="header-top">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🎮 NEVES TECH</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar produtos...">
+                <button class="btn-search">Buscar</button>
+            </div>
+
+            <div class="cart-section">
+                <button class="btn-theme" id="themeToggle" title="Alternar modo claro/escuro">🌙</button>
+                <button class="btn-cart">
+                    🛒 Carrinho
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER PROMOCIONAL -->
+    <section class="banner-promo">
+        <div class="banner-item">
+            <h3>🔥 MEGA PROMOÇÃO</h3>
+            <p>RTX 4070 com desconto de 25%!</p>
+        </div>
+        <div class="banner-item">
+            <h3>📦 FRETE GRÁTIS</h3>
+            <p>Compras acima de R$ 200</p>
+        </div>
+        <div class="banner-item">
+            <h3>⭐ MONITORES</h3>
+            <p>A partir de R$ 1.200</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- SEÇÃO INICIAL -->
+        <section id="inicio" class="intro-section">
+            <h2>Bem-vindo à NevesTech</h2>
+            <p>A maior loja de peças para computadores gamers do Brasil. Qualidade garantida, preços competitivos e entrega rápida!</p>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- SIDEBAR COM FILTROS -->
+            <aside class="sidebar-filters">
+                <h3>Filtros</h3>
+
+                <div class="filter-group">
+                    <h4>Categoria</h4>
+                    <label><input type="checkbox" data-filter="category" data-value="Placas de Vídeo"> Placas de Vídeo</label>
+                    <label><input type="checkbox" data-filter="category" data-value="Processadores"> Processadores</label>
+                    <label><input type="checkbox" data-filter="category" data-value="Memória RAM"> Memória RAM</label>
+                    <label><input type="checkbox" data-filter="category" data-value="Placas-Mãe"> Placas-Mãe</label>
+                    <label><input type="checkbox" data-filter="category" data-value="SSDs e HDDs"> SSDs e HDDs</label>
+                    <label><input type="checkbox" data-filter="category" data-value="Monitores"> Monitores</label>
+                    <label><input type="checkbox" data-filter="category" data-value="Periféricos"> Periféricos</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Faixa de Preço</h4>
+                    <label><input type="radio" name="price" data-filter="price" data-range="0-500"> R$ 0 - 500</label>
+                    <label><input type="radio" name="price" data-filter="price" data-range="500-1000"> R$ 500 - 1000</label>
+                    <label><input type="radio" name="price" data-filter="price" data-range="1000-2000"> R$ 1000 - 2000</label>
+                    <label><input type="radio" name="price" data-filter="price" data-range="2000+"> R$ 2000+</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Marca</h4>
+                    <label><input type="checkbox" data-filter="brand" data-value="NVIDIA"> NVIDIA</label>
+                    <label><input type="checkbox" data-filter="brand" data-value="AMD"> AMD</label>
+                    <label><input type="checkbox" data-filter="brand" data-value="Intel"> Intel</label>
+                    <label><input type="checkbox" data-filter="brand" data-value="Corsair"> Corsair</label>
+                    <label><input type="checkbox" data-filter="brand" data-value="ASUS"> ASUS</label>
+                    <label><input type="checkbox" data-filter="brand" data-value="Samsung"> Samsung</label>
+                    <label><input type="checkbox" data-filter="brand" data-value="Razer"> Razer</label>
+                </div>
+
+                <button class="btn-filter">Aplicar Filtros</button>
+            </aside>
+
+            <!-- GRID DE PRODUTOS -->
+            <section id="produtos" class="products-section">
+                <h2>Produtos em Destaque</h2>
+
+                <div class="products-grid">
+                    <!-- PRODUTO 1 -->
+                    <div class="product-card" data-category="Placas de Vídeo" data-brand="NVIDIA" data-price="3510">
+                        <div class="product-image">
+                            <img src="img/NVIDIAGeForceRTX 4070.pnj.webp" alt="NVIDIA RTX 4070">
+                            <span class="badge-pro">-25%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>NVIDIA GeForce RTX 4070</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(245 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-old">R$ 4.680,00</p>
+                                <p class="price-current">R$ 3.510,00</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 292,50</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 2 -->
+                    <div class="product-card" data-category="Placas de Vídeo" data-brand="NVIDIA" data-price="2799.50">
+                        <div class="product-image">
+                            <img src="img/NVIDIAGeForceRTX 4060Ti.pnj.webp" alt="NVIDIA RTX 4060 Ti">
+                            <span class="badge-sale">-15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>NVIDIA GeForce RTX 4060 Ti</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="review-count">(189 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-old">R$ 3.294,12</p>
+                                <p class="price-current">R$ 2.799,50</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 233,29</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 3 -->
+                    <div class="product-card" data-category="Placas de Vídeo" data-brand="AMD" data-price="3199.90">
+                        <div class="product-image">
+                            <img src="img/AMDRadeonRX7800XT.png.jpg" alt="AMD Radeon RX 7800 XT">
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Radeon RX 7800 XT</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(267 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 3.199,90</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 266,66</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 4 -->
+                    <div class="product-card" data-category="Processadores" data-brand="Intel" data-price="2099">
+                        <div class="product-image">
+                            <img src="img/Intel Core i9-13900K.pnj.webp" alt="Intel Core i9-13900K">
+                        </div>
+                        <div class="product-info">
+                            <h3>Intel Core i9-13900K</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(456 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 2.099,00</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 174,92</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 5 -->
+                    <div class="product-card" data-category="Processadores" data-brand="AMD" data-price="1889.99">
+                        <div class="product-image">
+                            <img src="img/AMD Ryzen 9 7950X.png.webp" alt="AMD Ryzen 9 7950X">
+                            <span class="badge-sale">-10%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Ryzen 9 7950X</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(382 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-old">R$ 2.099,99</p>
+                                <p class="price-current">R$ 1.889,99</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 157,50</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 6 -->
+                    <div class="product-card" data-category="Memória RAM" data-brand="Corsair" data-price="849.90">
+                        <div class="product-image">
+                            <img src="img/Corsair Vengeance RGB Pro 32GB 6000MHz.pnj.jpg" alt="Corsair Vengeance 32GB">
+                        </div>
+                        <div class="product-info">
+                            <h3>Corsair Vengeance RGB Pro 32GB 6000MHz</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="review-count">(178 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 849,90</p>
+                            </div>
+                            <p class="installment">ou 10x de R$ 84,99</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 7 -->
+                    <div class="product-card" data-category="Placas-Mãe" data-brand="ASUS" data-price="1799">
+                        <div class="product-image">
+                            <img src="img/ASUS ROG Strix Z790-E Gaming WiFi.pnj.png" alt="ASUS ROG Strix Z790-E Gaming WiFi">
+                        </div>
+                        <div class="product-info">
+                            <h3>ASUS ROG Strix Z790-E Gaming WiFi</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(234 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 1.799,00</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 149,92</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 8 -->
+                    <div class="product-card" data-category="SSDs e HDDs" data-brand="Samsung" data-price="1200">
+                        <div class="product-image">
+                            <img src="img/Samsung 990 Pro 2TB NVMe.pnj.webp" alt="Samsung 990 Pro 2TB">
+                            <span class="badge-pro">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung 990 Pro 2TB NVMe</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(512 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-old">R$ 1.500,00</p>
+                                <p class="price-current">R$ 1.200,00</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 100,00</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 9 -->
+                    <div class="product-card" data-category="Periféricos" data-brand="Corsair" data-price="899.90">
+                        <div class="product-image">
+                            <img src="img/Corsair RM850x 850W Gold.pnj.webp" alt="Corsair RM850x 850W Gold">
+                        </div>
+                        <div class="product-info">
+                            <h3>Corsair RM850x 850W Gold</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(398 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 899,90</p>
+                            </div>
+                            <p class="installment">ou 10x de R$ 89,99</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 10 -->
+                    <div class="product-card" data-category="Periféricos" data-brand="Corsair" data-price="799.99">
+                        <div class="product-image">
+                            <img src="img/Corsair H150i Elite LCD 360mm.pnj.avif" alt="Corsair H150i Elite 360mm">
+                        </div>
+                        <div class="product-info">
+                            <h3>Corsair H150i Elite LCD 360mm</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="review-count">(289 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 799,99</p>
+                            </div>
+                            <p class="installment">ou 10x de R$ 80,00</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 11 -->
+                    <div class="product-card" data-category="Monitores" data-brand="ASUS" data-price="2199">
+                        <div class="product-image">
+                            <img src="img/ASUS ROG Swift PG279Q 27 165Hz.png.webp" alt="ASUS ROG Swift PG279Q">
+                        </div>
+                        <div class="product-info">
+                            <h3>ASUS ROG Swift PG279Q 27" 165Hz</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(623 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 2.199,00</p>
+                            </div>
+                            <p class="installment">ou 12x de R$ 183,25</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 12 -->
+                    <div class="product-card" data-category="Periféricos" data-brand="Razer" data-price="449.90">
+                        <div class="product-image">
+                            <img src="img/Razer DeathAdder V3 Pro.png.jpg" alt="Razer DeathAdder V3 Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3>Razer DeathAdder V3 Pro</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="review-count">(734 avaliações)</span>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-current">R$ 449,90</p>
+                            </div>
+                            <p class="installment">ou 8x de R$ 56,24</p>
+                            <button class="btn-buy">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGINAÇÃO -->
+                <div class="pagination">
+                    <button class="btn-page active">1</button>
+                    <button class="btn-page">2</button>
+                    <button class="btn-page">3</button>
+                    <button class="btn-page">4</button>
+                    <button class="btn-page">5</button>
+                    <button class="btn-next">Próxima →</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="about-section">
+            <h2>Sobre a NEVES TECH</h2>
+            <p>Somos a maior loja especializada em peças para computadores gamers do Brasil. Com mais de 10 anos de experiência, oferecemos:</p>
+            <ul>
+                <li>✓ Produtos originais e garantidos</li>
+                <li>✓ Entrega rápida em todo o Brasil</li>
+                <li>✓ Atendimento ao cliente 24/7</li>
+                <li>✓ Garantia estendida em produtos selecionados</li>
+                <li>✓ Preços competitivos e as melhores promoções</li>
+                <li>✓ Troca e devoluções fáceis</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="contact-section">
+            <h2>Entre em Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>📧 Email</h4>
+                    <p>contato@nevestech.com.br</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📞 Telefone</h4>
+                    <p>(61) 3000-0000</p>
+                </div>
+                <div class="contact-item">
+                    <h4>💬 WhatsApp</h4>
+                    <p>(61) 99000-0000</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📍 Endereço</h4>
+                    <p>Ceilândia, 02 - Brasília, DF</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DO CARRINHO -->
+    <div id="cartModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🛒 Meu Carrinho</h2>
+                <button class="btn-close-modal">&times;</button>
+            </div>
+            <div id="cartItems" class="cart-items-list">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Frete:</span>
+                    <span id="shipping">R$ 0,00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>TOTAL:</span>
+                    <span id="totalPrice">R$ 0,00</span>
+                </div>
+                <button id="btnCheckout" class="btn-checkout">Ir para Pagamento</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE PAGAMENTO/CHECKOUT -->
+    <div id="checkoutModal" class="modal-overlay">
+        <div class="modal-content checkout-modal">
+            <div class="modal-header">
+                <h2>💳 Formas de Pagamento</h2>
+                <button class="btn-close-modal" onclick="closeCheckout()">&times;</button>
+            </div>
+            
+            <div class="payment-methods">
+                <h3>Selecione uma forma de pagamento:</h3>
+                
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="credit" checked>
+                    <div class="payment-item">
+                        <span class="payment-icon">💳</span>
+                        <div class="payment-info">
+                            <h4>Cartão de Crédito</h4>
+                            <p>Parcelado em até 12x sem juros</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="debit">
+                    <div class="payment-item">
+                        <span class="payment-icon">🏦</span>
+                        <div class="payment-info">
+                            <h4>Débito</h4>
+                            <p>Pagamento imediato na sua conta</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="pix">
+                    <div class="payment-item">
+                        <span class="payment-icon">💰</span>
+                        <div class="payment-info">
+                            <h4>PIX</h4>
+                            <p>Transferência instantânea - 5% de desconto</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="boleto">
+                    <div class="payment-item">
+                        <span class="payment-icon">📱</span>
+                        <div class="payment-info">
+                            <h4>Boleto Bancário</h4>
+                            <p>Vencimento em até 3 dias úteis</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="payment-total">
+                <h3>Total a Pagar:</h3>
+                <p id="paymentTotal">R$ 0,00</p>
+                <p id="discountInfo" class="discount-info"></p>
+            </div>
+
+            <div class="payment-actions">
+                <button class="btn-cancel" onclick="closeCheckout()">Voltar</button>
+                <button id="btnConfirmPayment" class="btn-confirm-payment">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER COMPLETO -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre NEVES TECH</h4>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Nossa História</a></li>
+                    <li><a href="#">Carreira</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Entregas</a></li>
+                    <li><a href="#">Devoluções</a></li>
+                    <li><a href="#">Garantia</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Trocas</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <ul class="social-links">
+                    <li><a href="#">📘 Facebook</a></li>
+                    <li><a href="#">📷 Instagram</a></li>
+                    <li><a href="#">🐦 Twitter</a></li>
+                    <li><a href="#">▶️ YouTube</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Formas de Pagamento</h4>
+                <ul>
+                    <li>💳 Cartão de Crédito <small>(até 12x)</small></li>
+                    <li>🏦 Débito Imediato</li>
+                    <li>💰 PIX (5% desc.)</li>
+                    <li>📱 Boleto Bancário</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEVES TECH. Todos os direitos reservados. | CNPJ: 12.345.678/0001-99</p>
+            <p>Desenvolvido com ❤️ para gamers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
